@@ -7,7 +7,6 @@ import {
     PaperAirplaneIcon,
 } from "@heroicons/react/outline"
 
-import { HeartIcon as HeartIconfilled } from "@heroicons/react/solid"
 
 function Post({ id, username, userImg, img, caption }) {
     return (

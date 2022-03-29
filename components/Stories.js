@@ -3,31 +3,31 @@ import { useEffect, useState } from "react";
 import Story from "./Story"
 
 
+const stories = [
+    {
+        id: '123',
+        img: 'http://personal.rhul.ac.uk/zkac/332/Screenshot%202022-03-28%20at%2018.21.59.png',
+        username: 'minami_hamabe.official'
+
+    },
+    {
+        id: '123',
+        img: 'http://personal.rhul.ac.uk/zkac/332/ilove.jpg',
+        username: 'ilove'
+
+    },
+
+]
+
 function Stories() {
-    const [suggestions, setSuggestions] = useState([])
-    useEffect(() => {
-        const suggestions = [...Array(20)].map((_, i) => ({
-            ...faker.helpers.contextualCard(),
-            id: i,
-        }))
-        setSuggestions(suggestions)
-    }, [])
-
-
     return (
         <div className="flex space-x-2 p-6 bg-white mt-8
          border-gray-200 border rounded-sm overflow-scroll scrollbar-thin
         scrollbar-thumb-black">
-            {suggestions.map(profile => (
-                <Story key={profile.id} img={profile.faker}
+            {stories.map(profile => (
+                <Story key={profile.id} img={profile.img}
                     username={profile.username} />
             ))}
-            {/* story */}
-            {/* story */}
-            {/* story */}
-            {/* story */}
-            {/* story */}
-            {/* story */}
 
         </div>
     )

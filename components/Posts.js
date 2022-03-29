@@ -13,7 +13,14 @@ const posts = [
     username: 'minami_hamabe.official',
     userImg: 'http://personal.rhul.ac.uk/zkac/332/Screenshot%202022-03-28%20at%2018.21.59.png',
     img: 'http://personal.rhul.ac.uk/zkac/332/Screenshot%202022-03-28%20at%2018.38.06.png',
-    caption: 'This is dope!'
+    caption: 'This is so cute!'
+  },
+  {
+    id: '123',
+    username: 'minami_hamabe.official',
+    userImg: 'http://personal.rhul.ac.uk/zkac/332/Screenshot%202022-03-28%20at%2018.21.59.png',
+    img: 'http://personal.rhul.ac.uk/zkac/332/lovley.JPG',
+    caption: ''
   },
 
 ]
